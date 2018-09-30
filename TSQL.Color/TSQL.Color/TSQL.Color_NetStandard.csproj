@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>TSQL.Color.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>TSQL_Color</AssemblyName>
+    <RootNamespace>TSQL_Color</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>TSQL_Color.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>TSQL_Color.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pack.bat" />
+    <None Remove="packages.config" />
+    <None Remove="project.json" />
+    <None Remove="project.lock.json" />
+    <None Remove="TSQL.Color.nuspec" />
+    <None Remove="TSQL_Color.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TSQL.Parser" Version="1.2.3" />
+  </ItemGroup>
+
+</Project>

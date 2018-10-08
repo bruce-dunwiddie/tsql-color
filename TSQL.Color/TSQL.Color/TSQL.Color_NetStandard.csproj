@@ -6,6 +6,7 @@
     <AssemblyOriginatorKeyFile>TSQL.Color.snk</AssemblyOriginatorKeyFile>
     <AssemblyName>TSQL_Color</AssemblyName>
     <RootNamespace>TSQL_Color</RootNamespace>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
